@@ -1,0 +1,9 @@
+Do("Exe('%b\Menus\Shortcuts\Backspace.edt');");
+Do("Exe('%b\Menus\Shortcuts\Backspace.edt');");
+Chr(36,"$");
+Do("InsertBullet;");
+Chr(36,"$");
+Do("InsertBullet;");
+Do("PreviousBullet;");
+Do("PreviousBullet;");
+

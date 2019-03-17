@@ -1,0 +1,66 @@
+﻿%!TEX program=xelatex
+%!Mode::"TeX:UTF-8"
+%report bugs to liyu@tjufe.edu.cn
+\documentclass[12pt,a4paper]{article}
+\usepackage{amsmath,amsthm}
+\usepackage{hyperref}
+\usepackage[titletoc]{appendix}
+\usepackage{fontspec}
+\setmainfont{Times New Roman}   %西文默认衬线字体
+\setsansfont{Arial}             %西文默认无衬线字体
+\setmonofont{Courier New}       %西文默认等宽字体
+\usepackage{xeCJK}
+\setCJKmainfont[BoldFont={SimHei},
+ ItalicFont={KaiTi}]{FangSong}  %中文衬衣字体
+\setCJKsansfont{SimHei}         %中文无衬衣字体
+\setCJKmonofont{KaiTi}          %中文等宽字体
+\bibliographystyle{plain}
+\synctex=1
+\newtheorem{theorem}{Theorem}[section]
+\begin{document}
+\title{\bf Hello TeX, 你好TeX}
+\author{
+Hello author\footnote{{\tt author@email}}, 
+你好作者\footnote{{\tt 电子邮件}}
+}
+\date{\today}
+\maketitle
+\begin{abstract}
+Hello abstract, 你好摘要
+\vskip0.3cm {\bf Keywords.} Hello Keywords, 你好关键字.
+\end{abstract}
+
+\section{Hello section, 你好节}
+Hello section, 你好节
+\cite{Babuska1989Finite, Brenner2008Mathematical}, 
+\cite{2004有限元方法的数学基础}
+\subsection{Hello subsection, 你好子节}
+Hello subsection, 你好子节
+\begin{theorem}
+\begin{equation*}
+\int_{a}^{b} f(x) \,dx
+\end{equation*}
+\end{theorem}
+\begin{proof}
+\begin{align*}
+&\frac{\partial^2 f}{\partial^2 x}+\frac{\partial^2 f}{\partial^2 y} = \sin(x+y), \\
+&\frac{\partial^2 g}{\partial^2 x}+\frac{\partial^2 g}{\partial^2 y} = \cos(x+y).
+\end{align*}
+
+\begin{equation*}
+f(x)=\begin{cases}
+\infty,  & \mbox{if } x=\alpha+\gamma,  \\
+\lim\limits_{y\rightarrow 0}\sqrt{y},  & \mbox{otherwise}.
+\end{cases}
+\end{equation*}
+\end{proof}
+
+
+
+\bibliography{bibfile}
+
+\begin{appendices}
+\section{Hello appendices, 你好附录}
+Hello appendices, 你好附录
+\end{appendices}
+\end{document}
