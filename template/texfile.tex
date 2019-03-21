@@ -4,6 +4,7 @@
 \documentclass[12pt,a4paper]{article}
 \usepackage{amsmath,amsthm}
 \usepackage{hyperref}
+\usepackage{color}
 \usepackage[titletoc]{appendix}
 \usepackage{fontspec}
 \setmainfont{Times New Roman}   %西文默认衬线字体
@@ -14,13 +15,13 @@
  ItalicFont={KaiTi}]{FangSong}  %中文衬衣字体
 \setCJKsansfont{SimHei}         %中文无衬衣字体
 \setCJKmonofont{KaiTi}          %中文等宽字体
-\bibliographystyle{plain}
+\bibliographystyle{apalike}
 \synctex=1
 \newtheorem{theorem}{Theorem}[section]
 \begin{document}
 \title{\bf Hello TeX, 你好TeX}
 \author{
-Hello author\footnote{{\tt author@email}}, 
+Hello author\footnote{{\tt author@email}},
 你好作者\footnote{{\tt 电子邮件}}
 }
 \date{\today}
@@ -31,8 +32,8 @@ Hello abstract, 你好摘要
 \end{abstract}
 
 \section{Hello section, 你好节}
-Hello section, 你好节
-\cite{Babuska1989Finite, Brenner2008Mathematical}, 
+{\color{red}Hello section}, 你好节
+\cite{Babuska1989Finite, Brenner2008Mathematical},
 \cite{2004有限元方法的数学基础}
 \subsection{Hello subsection, 你好子节}
 Hello subsection, 你好子节
